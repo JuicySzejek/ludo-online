@@ -16,7 +16,7 @@ var during_game = [];
 var ended_games = [];
 const latency = 3;
 
-mongoose.connect('mongodb+srv://szwej:<a4x8h3F4Xd0u7tDS>@cluster0.itobr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://szwej:OQXzjrXPedg5LpG3@cluster0.itobr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 var db;
 
 function connectToMongo() {
