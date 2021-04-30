@@ -2,7 +2,7 @@ var express = require("express");
 var path = require("path");
 var mongoose = require("mongoose");
 var app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
