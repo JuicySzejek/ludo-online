@@ -403,5 +403,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(PORT, function () { 
-    console.log(" === Serwer zostaje uruchomiony na porcie " + ${ PORT } + ".");
+    console.log(" === Serwer zostaje uruchomiony na porcie " + PORT  + ".");
 })
