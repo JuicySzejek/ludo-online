@@ -16,7 +16,7 @@ var during_game = [];
 var ended_games = [];
 const latency = 3;
 
-mongoose.connect('mongodb://localhost/Chinczyk');
+mongoose.connect('https://cloud.mongodb.com/v2/608c40ecc3fce57587ddbe3e#clusters);
 var db;
 
 function connectToMongo() {
