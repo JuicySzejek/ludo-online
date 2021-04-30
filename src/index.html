@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chińczyk</title>
+    <script src="js/ServerController.js"></script>
+    <script src="js/GameController.js"></script>
+    <script src="js/VoiceController.js"></script>
+    <script src="js/gameLogicProperties.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        var serverController;
+        var gameController;
+        var voiceController;
+
+        window.onload = function () {
+            serverController = new ServerController();
+            voiceController = new VoiceController();
+
+            document.getElementById("sendNick").addEventListener("click", function () {
+                var nick = document.getElementById("nick").value;
+                
+                serverController.sendNick(nick);
+            })
+        }
+
+    </script>
+</head>
+<body>
+    <label>Twój nick:</label>
+    <input id="nick" name="nick" type="text">
+    <button id="sendNick">OK</button>
+</body>
+</html>
